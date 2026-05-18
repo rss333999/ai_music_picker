@@ -35,7 +35,7 @@ if pd_app.button("Generate My Vibe", type="primary"):
         
         # 2. Tell Gemini to return structured music data
         response = client.models.generate_content(
-            model='gemini-2.5-flash-lite',
+            model='gemini-2.5-flash',
             contents=f'Act as an expert music curator. Recommend 5 distinct songs perfectly suited for this mood: "{final_mood}".',
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
