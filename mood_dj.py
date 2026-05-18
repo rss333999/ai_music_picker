@@ -12,9 +12,17 @@ pd_app.set_page_config(page_title="AI Mood DJ", page_icon="🎵", layout="center
 
 pd_app.title("🎵 AI Mood DJ & Playlist Generator")
 pd_app.write("Tell me your exact vibe, and I'll generate a custom Spotify roadmap.")
-
 # 1. Quick-select mood buttons or custom text input
-mood_tags = ["🔥 Gym Pump", "☕ Lo-Fi Study", "🌧️ Rainy Day", "🌌 Midnight Drive"]
+mood_tags = [
+    "🧠 Deep Focus Coding",
+    "🔥 Gym Pump", 
+    "☕ Lo-Fi Study", 
+    "🔋 Post-Exam Burnout",
+    "🌧️ Rainy Day Melancholy", 
+    "🌌 Midnight Drive", 
+    "📈 Hyper Productive",
+    "🌅 Chill Morning Vibe"
+]
 selected_tag = pd_app.radio("Choose a quick vibe:", mood_tags, horizontal=True)
 
 custom_mood = pd_app.text_input("Or type your exact custom vibe/feeling:")
